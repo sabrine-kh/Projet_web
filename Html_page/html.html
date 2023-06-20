@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tp2.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/x-icon" href="../Learn Web-Dev.png">
+    <title>Cours HTML</title>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("HEAD").style.zIndex="0";
+         
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("HEAD").style.zIndex="99";
+        }
+        </script>
+</head>
+<body> 
+   
+    <header id="HEAD">
+        <a id="MenuBtn" onclick="openNav()">&#9776;</a>
+        <a class="logo">W.3.B.D.3.V </a>
+        <nav class="mynav">
+         <div class="mynav-links">
+           <li><a href="../landing_page/Tp1.1.html"target="_blank">Acceuil</a></li>
+           <li><a href="../Html_page/html.html" >HTML</a></li>
+           <li><a href="../Css_Page/css.html" target="_blank">CSS</a></li>
+           <li><a href="../JavaScript_page/js.html" target="_blank">JAVASCRIPT</a></li>
+         </div>
+   </nav>
+   <a href="../Sign in/signin.html"><button>Sign in</button></a>
+ </header>
+
+ 
+  
+        
+             
+
+
+<div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+   <ul class="nav">
+      
+  <li> <a href="#intro">introduction</a></li>
+   
+  <li>  <a href="#bal">les balises et leurs attributs</a></li>
+   
+  <li><a href="#balp">les balises en paires</a> </li> 
+   
+  <li> <a href="#balpc">les balises les plus courant</a></li>
+  </ul>
+</div>
+
+
+
+   <div title="Introduction" id="intro">
+     <div>
+       <p id="p">
+           Keywords to need to know before taking the course:
+         </p>
+      
+    
+     </div>
+    <div class="def">
+           <dt><h4>Web</h4></dt>
+   <dd class="article">The web consists of digital documents, referred
+       to as web pages, that are viewable through web
+       browser software on devices like smartphones,
+       tablets, and computers.
+       These pages contain many types of content.
+   </dd>
+    </div>
+   
+      <div class="def">
+       <dt><h4>HTML</h4></dt>
+       <dd class="article">HTML Stands for "Hypertext Markup Language."
+            HTML is the language used to create webpages. 
+           "Hypertext" refers to the hyperlinks that an HTML page may contain.</dd>
+      </div>         
+          <div class="def">
+           <dt><h4>HTTP</h4></dt>
+           <dd class="article"> HTTP is a "stateless" protocol, meaning that every packet can be understood in isolation from any other, 
+               without the provision of additional session data. The standard port for HTTP connections is port 80.</dd>
+          </div>        
+       <div class="def">
+           <dt><h4>URL</h4></dt>
+           <dd class="article"> With Hypertext and HTTP, URL is one of the key concepts of the Web. 
+                It is the mechanism used by browsers to retrieve any published resource on the web. 
+                URL stands for Uniform Resource Locator. 
+                A URL is nothing more than the address of a given unique resource on the Web. </dd>
+       </div>
+       <div class="def"> 
+           <dt><h4>Hypertext</h4></dt>
+           <dd class="article"> Les liens hypertextes (ancrages) sont des éléments d'une page HTML 
+               (soulignés lorsqu'il s'agit de texte) permettant aux internautes de naviguer vers une nouvelle adresse 
+               lorsque l'on clique dessus.
+                Ce sont les liens hypertextes qui permettent de lier des pages Web entre elles. 
+                Ils permettent notamment de naviguer </dd>
+       </div>
+       <div class="def">
+           <dt><h4 >navigation web</h4></dt>
+         
+           <dd class="article"> Website navigation is one of the top factors to consider, though, because if visitors cant find your web form,
+                it doesnt matter how pretty it is.
+               Website navigation allows visitors to flow from one page to another without frustration.</dd> </div>
+
+</div>
+          <div id="Tabs">     
+               <div id="def">
+               <table border="2" cellpadding="10">
+                   <caption>Exemples des navigateur supportant HTML 5</caption>
+                    <tr>
+                        <th> Logo</th>
+                        <th> name</th>
+                        <th> percentage</th>
+                    </tr>
+               
+                   <tr>
+                       <td style="background-color: #24252A;"> <a href="https://www.google.com/" target="_blank"> <img src="images/chro.png" width="40" height="40" alt="chrome" ></a></td>
+                       <td> Google chrome </td>
+                       <td> 
+                         <meter  value="0.75"> 75%</meter>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="background-color: #24252A;">   <img src="images/mozilla.png" width="40px" height="40px" alt="Mozila"> </td>
+                       <td> Mozila FireFox</td>
+                       <td>  <meter  value="0.6"> 60%</meter></td>
+                   </tr>
+                   <tr>
+                       <td style="background-color: #24252A;"> <img src="images/internet.jpg"  width="40" height="40" alt="IE"></td>
+                       <td> Internet Explorer</td>
+                       <td>  <meter  value="0.5"> 50%</meter></td>
+                   </tr>
+                </table>  
+               </div>
+      
+      
+    </dl>
+   
+  
+<div id="bal" title="Les balises html et leurs attributs">
+   <h2> Les balises html et leurs attributs</h2>
+<table border="2" cellpadding="10">
+   <tr>
+       <th>
+         Balises
+       </th>
+       <th>Attributs </th>
+       <th>Description</th>
+   </tr>
+<tr>
+    <td style="background-color: #24252A;color: rgba(0, 136, 169, 1);" rowspan="2">
+   <xmp><a></a></xmp>
+    </td>
+      <td>
+       download
+      </td>
+      <td>
+       Specifies that the target will be downloaded when a user clicks on the hyperlink 
+      </td>
+</tr>
+   <tr>
+   <td>href</td>
+   <td>Specifies the URL of the page the link goes to</td>
+   </tr>
+   <tr>
+       <td style="background-color: #24252A; color: rgba(0, 136, 169, 1);"rowspan="3"> <xmp><area></area></xmp></td>
+       <td> coords</td>
+       <td> Specifies the coordinates of the area</td>
+   </tr>
+   <tr>
+       <td  > href</td>
+        <td> Specifies the hyperlink target for the area</td>        
+   </tr>
+   <tr>
+       
+       <td>download</td>
+       <td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+   </tr>
+   <tr>
+       <td style="background-color: #24252A;color: rgba(0, 136, 169, 1);" rowspan="3"><xmp><form></form></xmp></td>
+       <td>name</td>
+           <td>	Specifies the name of a form</td>
+   </tr>
+   <tr>
+       <td>target</td>
+       <td>Specifies where to display the response that is received after submitting the form
+       </td>
+   </tr>
+   <tr>
+       <td>method	</td>
+       <td>Specifies the HTTP method to use when sending form-data
+       </td>
+   </tr>
+   <tr>
+       <td style="background-color: #24252A;color: rgba(0, 136, 169, 1);" rowspan="3"><xmp><img></xmp></td>
+       <td>alt</td>
+       <td>Specifies an alternate text for an image</td>
+   </tr>
+   <tr>
+       <td>src</td>
+       <td> Specifies the path to the image </td>
+   </tr>
+   <tr>
+       <td >usemap</td>
+       <td>Specifies an image as a client-side image map
+       </td>
+   </tr>
+   <tr>
+       <td style="background-color: #24252A;color: rgba(0, 136, 169, 1);" rowspan="2"><xmp> <main ></main> </xmp></td>
+       <td>for</td>
+       <td>Specifies the id of the form element the label should be bound to
+       </td>
+   </tr>
+   <tr>
+       <td> form </td>
+       <td>Specifies which form the label belongs to
+       </td>
+   </tr>
+   <tr>
+       <td style="background-color: #24252A;color: rgba(0, 136, 169, 1);"> <xmp> <form ></form> </xmp></td>
+       <td> name </td>
+       <td>Required. Specifies the name of the image map
+       </td>
+   </tr>
+   <tr>
+       <td style="background-color: #24252A;color: rgba(0, 136, 169, 1);" rowspan="2"> <xmp> <meta ></meta> </xmp> </td>
+       <td> charset </td>
+       <td>  Specifies the character encoding for the HTML document</td>
+   </tr>
+   <tr>
+       <td>content</td>
+       <td> Specifies the value associated with the http-equiv or name attribute
+       </td>
+   </tr>
+
+</table>
+</div>
+</div> 
+
+<div  id="balp" title="Les balises en pair">
+   <h2>Les balises en paires</h2>
+   <div id="row">
+    <div id="col1">
+     <div class="balise"> <xmp> <html ></html> </xmp></div>
+     <div class="balise"><xmp> <head ></head> </xmp></div>
+     <div class="balise"><xmp> <form ></form> </xmp></div>
+     <div class="balise"><xmp> <footer ></fotter> </xmp></div>
+     <div class="balise"><xmp> <nav ></nav> </xmp></div>
+     <div class="balise"><xmp> <section ></section> </xmp></div>
+    </div>
+    <div id="col2">
+     <div class="balise"><xmp> <div ></div> </xmp></div>
+     <div class="balise"><xmp> <p></p> </xmp></div>
+     <div class="balise"><xmp> <table></table> </xmp></div>
+     <div class="balise"><xmp> <aside ></aside> </xmp></div>
+     <div class="balise"><xmp> <header ></header> </xmp></div>
+     <div class="balise"><xmp><body></body ></xmp></div>
+     </div>
+    </div>
+
+</div>
+<div  id="balpc"title=" Balises les plus courantes ">
+    <h2> Balises les plus courantes</h2>
+   <table border="2" cellpadding="5">
+       <tr>
+       <th>Balise</th>
+       <th>Role</th>
+       </tr>
+       <tr>
+           <td> <xmp> <head ></head> </xmp></td>
+           <td> This element is a container for metadata (data about data) and is placed between the html and the body tag</tr>
+       </tr>
+       <tr> 
+           <td> <xmp> <titre ></titre> </xmp></td>
+         <td> required in every HTML document designs the title of the html page</td>
+       </tr>
+       <tr>
+           <td>   <xmp> <link > </xmp></td>
+       <td>  this tag defines the relationship between the current document and an external resource </td>
+       </tr>
+        <tr>
+         <td><xmp><img></xmp></td>
+         <td>insert an image</td>
+        </tr>
+        <tr>
+           <td><xmp><ul></ul></xmp></td>
+           <td>unordered list</td>
+        </tr> 
+        <tr>
+            <td><xmp><li></li></xmp></td>
+            <td>the elements of the list</td>
+        </tr>  
+       <tr>
+           <td><xmp><video></xmp></td>
+           <td> insert a video </td>
+       </tr>
+       <tr>
+           <td><xmp><form></form></xmp></td>
+           <td> create a form </td>
+       </tr>
+       <tr>
+           <td><xmp><table></table></xmp></td>
+           <td>create a table </td>
+       </tr>
+
+       </table>
+
+</div>
+<div id="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</body>
+
+</html>

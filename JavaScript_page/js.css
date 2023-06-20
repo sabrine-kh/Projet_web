@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+header{
+  background-color: #24252A;
+}
+.logo{
+  cursor: pointer;
+}
+
+
+body {
+  background-color:#0087a90c;
+
+}
+header li, a, button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2%;
+  }
+header a:first-child{
+  margin-right: 0;
+}
+.mynav-links{
+list-style: none;
+
+}
+
+.mynav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.mynav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.mynav-links li a:hover{
+    color: #0088a9;
+    padding: 15%;
+    background-color: rgba(240, 255, 255, 0.795);
+}
+.mynav-links li:nth-child(4) a{
+  color: #0088a9;
+  background-color: rgba(240, 255, 255, 0.795);
+  padding: 10%;
+  border-radius: 50%;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+   background-color:  rgba(0, 136, 169, 0.8);
+   cursor: pointer;
+}
+
+  body{
+      background-image: url(The-Best-50-Website-Preloaders-Around-the-Web-Example-01.gif);
+  
+background-size: cover;  
+    }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Page</title>
+    <link rel="stylesheet" href="css.css"/>
+    <link rel="icon" type="image/x-icon" href="../Learn Web-Dev.png">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("HEAD").style.zIndex="0";
+       
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("HEAD").style.zIndex="99";
+      }
+      </script>
+
+</head>
+<body>
+    <header id="HEAD">
+      <a id="MenuBtn" onclick="openNav()">&#9776;</a>
+        <a class="logo">W.3.B.D.3.V </a>
+        <nav class="mynav">
+         <div class="mynav-links">
+           <li><a href="../landing_page/Tp1.1.html">Acceuil</a></li>
+           <li><a href="../Html_page/html.html" target="_blank">HTML</a></li>
+           <li><a href="../Css_Page/">CSS</a></li>
+           <li><a href="../JavaScript_page/js.html" target="_blank">JAVASCRIPT</a></li>
+         </div>
+   </nav>
+   <a href="../Sign in/signin.html"><button>Sign in</button></a>
+ </header>
+
+
+ <div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+   <ul class="nav">
+      
+  <li> <a href="#intro">introduction</a></li>
+   
+  <li><a href="#sel">Les selecteurs de css</a> </li> 
+   
+  <li> <a href="#math">CSS Math Functions</a></li>
+  </ul>
+</div>
+
+<div id="intro">
+<div class="def">
+  <dt><h4>What is CSS?</h4></dt>
+  <dd class="article">CSS stands for Cascading Style Sheets
+    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+    CSS saves a lot of work. It can control the layout of multiple web pages all at once
+    External stylesheets are stored in CSS files
+    </dd>
+ </div>         
+     <div class="def">
+      <dt><h4>Why Use CSS?</h4></dt>
+      <dd class="article">CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</dd>
+    <img width="50%" height="auto" src="images/cssexpl.png"/>
+    </div>        
+  <div class="def">
+      <dt><h4>CSS Solved a Big Problem</h4></dt>
+      <dd class="article"> HTML was NEVER intended to contain tags for formatting a web page!
+
+        HTML was created to describe the content of a web page, like:
+        
+       <xmp><h1></xmp>This is a heading<xmp></h1></xmp> 
+        
+       <xmp> <p></xmp>This is a paragraph.<xmp></p></xmp>
+        
+        When tags like <xmp><font></xmp>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+        
+        To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+        
+        CSS removed the style formatting from the HTML page!</dd>
+  </div>
+</div>
+<h1>CSS SELECTORS</h1>
+<div id="sel">
+  <div class="def">
+    <dt><h4>CSS Selectors</h4></dt>
+    <dd class="article">We can divide CSS selectors into five categories:
+
+      Simple selectors (select elements based on name, id, class)
+      Combinator selectors (select elements based on a specific relationship between them)
+      Pseudo-class selectors (select elements based on a certain state)
+      Pseudo-elements selectors (select and style a part of an element)
+      Attribute selectors (select elements based on an attribute or attribute value)</dd>
+  <img width="50%" height="auto" src="images/Capture d’écran 2022-04-27 062925.png"/>
+  </div>     
+  
+  <div class="def">
+    <dt><h4>CSS id Selectors</h4></dt>
+    <dd class="article">The id selector uses the id attribute of an HTML element to select a specific element.
+
+      The id of an element is unique within a page, so the id selector is used to select one unique element!
+      
+      To select an element with a specific id, write a hash (#) character, followed by the id of the element.)</dd>
+  <img width="50%" height="auto" src="images/3.png"/>
+  </div> 
+
+  <div class="def">
+    <dt><h4>CSS class Selectors</h4></dt>
+    <dd class="article">The class selector selects HTML elements with a specific class attribute.
+
+      To select elements with a specific class, write a period (.) character, followed by the class name.</dd>
+  <img width="50%" height="auto" src="images/4.png"/>
+  </div> 
+</div>
+<h1>CSS Math functions </h1>
+<div id="math">
+  <div class="def">
+    <dt><h4>The calc() Function</h4></dt>
+    <dd class="article">The calc() function performs a calculation to be used as the property value.</dd>
+  <img width="50%" height="auto" src="images/5.png"/>
+  </div> 
+  <div class="def">
+    <dt><h4>The max() Function</h4></dt>
+    <dd class="article">The max() function uses the largest value, from a comma-separated list of values, as the property value.</dd>
+  <img width="50%" height="auto" src="images/6.png"/>
+  </div> 
+
+</div>
+<div id="flex">
+  <h2>This complete guide to flexbox will sureley get you going</h2>
+<iframe src="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" width="700" height="500"></iframe>
+</div>
+<footer id="footer">
+  <ul class="icons">
+      <li><a href="https://Twitter.com" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="https://Facebook.com" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="https://Instagram.com" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="https://LinkedIn.com" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://Gmail.com" target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+  </ul>
+  <p class="copyright">&copy; Sabrine khouaja</p>
+</footer>
+
+</body>
+</html>

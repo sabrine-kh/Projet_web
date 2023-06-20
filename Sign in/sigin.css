@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+body {
+    background-color:#0087a90c;
+  
+  }
+
+body{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+  header{
+    background-color: #24252A;
+  }
+  .logo{
+    cursor: pointer;
+  }
+  header li, a, button{
+      font-family: "Montserrat",sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+  
+  }
+  
+  
+  header{
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 2%;
+  }
+  header a:first-child{
+    margin-right: 0;
+  }
+  
+  .mynav-links{
+  list-style: none;
+  
+  }
+  
+  .mynav-links li {
+      display: inline-block;
+      padding: 0 20px;
+  }
+  .mynav-links li a {
+      transition: all 0.3s ease 0s;
+  }
+  
+  .mynav-links li a:hover{
+      color: #0088a9;
+      padding: 15%;
+      background-color: rgba(240, 255, 255, 0.795);
+  }
+  
+  button{
+      padding: 9px 25px;
+      background-color: rgba(0, 136, 169, 1);
+      border: none;
+      border-radius: 50px;
+      transition: all 0.3s ease 0s;
+  }
+  
+  button:hover{
+     background-color:  rgba(0, 136, 169, 0.8);
+     cursor: pointer;
+  }
+.container a{
+    color: black;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 35vw;
+      background-color: white;
+      border-radius: 25px;
+      margin-left:32%;
+      margin-top: 15%;
+      padding: 2%;
+  }
+
+    .container input{
+      width: 50%;
+      padding: 1.5%;
+      margin:2% 0 2% 0 ;
+      background: #F0F1F8;
+  }
+
+  .container button{
+      width: 25%;
+     
+      margin-top: 1%;
+  } 
+   
